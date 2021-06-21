@@ -60,6 +60,7 @@ API changes
 ~~~~~~~~~~~
 - Preprocessor classes :class:`braindecode.datautil.MNEPreproc` and :class:`braindecode.datautil.NumpyPreproc` are deprecated in favor of :class:`braindecode.datautil.Preprocessor` (:gh:`197` by `Hubert Banville`_)
 - Parameter `stop_offset_samples` of :func:`braindecode.datautil.create_fixed_length_windows` must now be set to `None` instead of 0 to indicate the end of the recording (:gh:`152` by `Hubert Banville`_)
+- Parameter names `trial_start_offset_samples` and `trial_stop_offset_samples` of :func:`create_windows_from_events` and related functions changed to `start_offset_samples` and `stop_offset_samples` (:gh:`246`)
 
 Authors
 ~~~~~~~
